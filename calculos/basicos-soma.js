@@ -23,7 +23,7 @@ export function somarNumerosArray(numeros) {
  */
 export function somarStrings(...numeros) {
   const valores = numeros.map((n) => Number(n));
-  return somarNumeros(valores);
+  return somarNumerosArray(valores);
 }
 
 /**
