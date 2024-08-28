@@ -8,10 +8,11 @@ export function subtrairNumeros(...numeros) {
 }
 
 /**
- * Subtrai valores numéricos presentes em um array
- * @param {number} numeros Valores a serem subtraídos
+ * Subtrai, como valores numéricos, valores presentes em um array de strings
+ * @param {number} numeros Valores a serem substraídos
  * @returns Total da subtração
  */
-export function subtrairNumerosArray(numeros) {
-  return numeros.reduce((total, proximo) => total - proximo, 0);
+export function subtrairStringsArray(numeros) {
+  const valores = numeros.map((n) => Number(n));
+  return subtrairNumerosArray(valores);
 }
